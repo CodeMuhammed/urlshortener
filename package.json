@@ -1,0 +1,17 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "google url shortener api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "goo.gl"
+  ],
+  "author": "Muhammed Ali",
+  "license": "ISC",
+  "dependencies": {
+    "goo.gl": "^0.1.4"
+  }
+}
