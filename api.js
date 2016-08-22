@@ -14,6 +14,9 @@ googl.setKey('AIzaSyAsUOFWvfUxUDK3VcqCYnDqZ3nUoZZrBKw');
 
 /**
  *This prompt function takes input from the commandline from the user
+ *
+ *@param {string} question_str to display to user
+ *@param {function} callback to output the result
 */
 function prompt(question_str , callback) {
   //
@@ -56,7 +59,6 @@ function shortenUrl(url , callback) {
  *NOTE: This uses a GET method
 */
 function expandUrl(url , callback) {
-  console.log(url , '--------------here');
   googl.expand(url)
       .then(function (longUrl) {
 
@@ -127,3 +129,9 @@ function displayMenu() {
 
 //This kicks start the commandline process
 displayMenu();
+
+//Methods to export to test module
+module.exports = {
+  expandUrl : expandUrl,
+  shortenUrl: shortenUrl
+};
